@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenr {
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 800px;
+}
+
+.card h1 {
+    font-size: 60px;
+    margin-left: 100px;
+    padding-top: 50px;
+}
+
+.card1 {
+    display: flex;
+    gap: 80px;
+}
+.card2{
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.card2 p {
+    color: rgba(0, 0, 0, 0.716);
+}
+
+.card3 {
+    color: #00000092;
+    font-size: 20px;
+}

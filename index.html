@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Demo styles -->
+    <style>
+        html,
+        .contenr {
+            position: relative;
+            height: 100%;
+        }
+
+        .contenr {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 1200px;
+            height: 300px;
+            margin-top: 50px;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 300px;
+            height: 300px;
+            margin-left: 10px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenr">
+        <div class="cards">
+            <div class="card">
+                <h1>Projects and <br> practice</h1>
+            </div>
+            <div class="card1">
+                <div class="card2">
+                    <div class="card3">01</div>
+                    <p>Lorem ipsum, dolor sit amet <br> consectetur adipisicing elit. Iste pariatur aliquid <br>
+                        ipsum aut fuga enim consequatur rerum <br> ullam consequuntur nisi inventore!</p>
+                </div>
+                <div class="card2">
+                    <div class="card3">02</div>
+                    <p>Lorem ipsum, dolor sit amet <br> consectetur adipisicing elit. Iste pariatur aliquid <br>
+                        ipsum aut fuga enim consequatur rerum <br> ullam consequuntur nisi inventore!</p>
+                </div>
+                <div class="card2">
+                    <div class="card3">03</div>
+                    <p>Lorem ipsum, dolor sit amet <br> consectetur adipisicing elit. Iste pariatur aliquid <br>
+                        ipsum aut fuga enim consequatur rerum <br> ullam consequuntur nisi inventore!</p>
+                </div>
+            </div>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img
+                            src="png-transparent-nokia-3410-nokia-1100-nokia-phone-series-nokia-6-nokia-3210-nokia-3310-electronics-gadget-mobile-phone-thumbnail-removebg-preview.png"
+                            alt=""></div>
+                    <div class="swiper-slide"><img
+                            src="png-transparent-nokia-3310-2017-nokia-3210-nokia-8110-smartphone-gadget-electronics-mobile-phone-removebg-preview.png"
+                            alt=""></div>
+                    <div class="swiper-slide"><img
+                            src="pngtree-cartoon-hand-drawn-vintage-mobile-phone-png-image_4077063-removebg-preview.png"
+                            alt=""></div>
+                    <div class="swiper-slide"><img
+                            src="png-clipart-aesthetic-grunge-black-nokia-3310-candybar-phone-removebg-preview.png"
+                            alt=""></div>
+                    <div class="swiper-slide"><img
+                            src="gratis-png-nokia-c2-01-nokia-c2-00-nokia-c1-01-prepago-telefono-movil-thumbnail-removebg-preview.png"
+                            alt=""></div>
+                    <div class="swiper-slide"><img
+                            src="104-1040464_old-nokia-keypad-mobile-hd-png-download-removebg-preview.png" alt=""></div>
+                    <div class="swiper-slide"><img
+                            src="png-transparent-feature-phone-nokia-105-2017-saudi-arabia-nokia-3310-2017-others-miscellaneous-gadget-mobile-phone-thumbnail-removebg-preview.png"
+                            alt=""></div>
+                    <div class="swiper-slide"><img src="png-transparent-nokia-105-2017-nokia-130-2017-nokia-3310-electronics-gadget-mobile-phone-thumbnail-removebg-preview.png" alt=""></div>
+                    <div class="swiper-slide"><img src="png-transparent-nokia-3310-2017-nokia-3210-nokia-8110-smartphone-gadget-electronics-mobile-phone-removebg-preview.png" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+
+</html>
